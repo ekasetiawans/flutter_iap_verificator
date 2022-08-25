@@ -1,15 +1,24 @@
 # flutter_iap_verificator
 
-A new Flutter plugin project.
+A Flutter plugin to verify In App Purchase Receipt on device.
+Currently, it's only works on iOS.
 
-## Getting Started
+This plugin is using [TPInAppReceipt](https://github.com/tikhop/TPInAppReceipt) as a backend.
+## Usage
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+Use [In App Purchase](https://pub.dev/packages/in_app_purchase) plugin.
+Then use the `localVerificationData` as receipt value.
 
-For help getting started with Flutter development, view the
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Example:
+```dart
+    final receipt = purchaseDetails.verificationData.localVerificationData;
 
+    final isValid = await FlutterIapVerificator(),.verify(receipt);
+    if (isValid){
+        // process valid receipt.
+    }
+```
+
+
+## Warning!!!
+We highly recommends to verify your receipt on server side. This plugins can be used as additional security for verifying the receipt before you send to your server.
