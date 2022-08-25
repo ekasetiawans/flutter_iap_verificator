@@ -1,0 +1,29 @@
+PODS:
+  - Flutter (1.0.0)
+  - flutter_iap_verificator (0.0.1):
+    - Flutter
+    - TPInAppReceipt
+  - TPInAppReceipt (2.6.2)
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - flutter_iap_verificator (from `.symlinks/plugins/flutter_iap_verificator/ios`)
+
+SPEC REPOS:
+  trunk:
+    - TPInAppReceipt
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  flutter_iap_verificator:
+    :path: ".symlinks/plugins/flutter_iap_verificator/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 50d75fe2f02b26cc09d224853bb45737f8b3214a
+  flutter_iap_verificator: e2ae3cc9c424edd09556f1854dad7a5a753f8822
+  TPInAppReceipt: b105ea2ff01e224afd5c95e0faedd4c99d08d369
+
+PODFILE CHECKSUM: aafe91acc616949ddb318b77800a7f51bffa2a4c
+
+COCOAPODS: 1.11.3
